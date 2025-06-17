@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.OrangeHRM.utilities.ListenersClass"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="chrome(failed)" verbose="0">
+    <parameter name="Browsers" value="chrome"/>
+    <classes>
+      <class name="com.OrangeHRM.runnerScripts.TC02_VerifyTitle">
+        <methods>
+          <include name="LogoutApplication"/>
+          <include name="CloseBrowser"/>
+          <include name="BrowserConfig"/>
+          <include name="LoginApplication"/>
+          <include name="Testcase02"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.runnerScripts.TC02_VerifyTitle -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
